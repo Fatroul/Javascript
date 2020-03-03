@@ -298,21 +298,47 @@ td {
 #rec_container {
     background-color: rgba(0,0,0,0.6);
     position: fixed;
-    width: 100vw;
     top: 0;
+    width: 100vw;
     height: 100vh;
     z-index: 199;
-
+    display: none;
 }
 
-#recettes {
-        background-color: rgb(48, 47, 47);
-        border: 2px solid rgb(31, 176, 212) ;
-        position: fixed;
-        top: 10vh;
-        left: 10vw;
-        width: 80vw;
-        height: 80vh;
-        z-index: 200;
+#recette {
+    background-color: rgb(48, 47, 47);
+    border: 2px solid rgb(31, 176, 212);
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    z-index: 200;
+    padding: 2em;
+    display: flex;
+}
 
+    #recette .description {
+        padding: 0 2em;
+    }
+    
+    #recette .description table {
+        padding: 0 2em;
+        margin: 2em 0;
+    }
+    
+    .description table td, .description table th {
+        padding: 1.5em;
+    }
+    
+    #recette img {
+        display: block;
+        border: 2px solid red;
+        width: 20vw;
+        height: calc(40vw * 2/3);
+        border-radius: 50%;
+    }
+
+    .elem {
+        cursor: pointer;
     }

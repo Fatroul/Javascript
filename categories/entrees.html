@@ -57,8 +57,66 @@
         </ul>
     </section>
     <section id="rec_container">
-        <div id="recettes"></div>
+        <div id="recette"></div>
+
     </section>
-<script src="script_entrees.js"></script>
+    <section>
+        <h2>Ajoutez une recette à la selection</h2>
+        <form id="form" action="#" method="post">
+            <p>
+                <label for="nomrecette">Le nom de votre recette!</label>
+                <input type="text" id="nomrecette" name="nomrecette" required>
+            </p>
+            <p>
+                <label for="description">Description.</label>
+                <input type="text" id="description" name="description" required>
+            </p>
+            <p>
+                <label for="nbPers">Nombre de personnes.</label>
+                <input type="number" id="nbPers" name="nbPers" required>
+            </p>
+            <p>
+                <label for="time">Temps.</label>
+                <input type="number" id="time" required>
+            </p>
+            <P>
+                <label for="difficulte">Difficulté.</label>
+                <select id="difficulte" name="difficulte" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                </select>
+            </P>
+            <p>
+                <label for="cout">Coût.</label>
+                <label for="cout1" name="cout">1</label>
+                <input type="radio" id="cout1" name="cout" required>
+                <label for="cout1" name="cout">2</label>
+                <input type="radio" id="cout2" name="cout" required>
+                <label for="cout1" name="cout">3</label>
+                <input type="radio" id="cout3" name="cout" required>
+                <label for="cout1" name="cout">4</label>
+                <input type="radio" id="cout4" name="cout" required>
+                <label for="cout1" name="cout">5</label>
+                <input type="radio" id="cout5" name="cout" required>
+            </p>
+            <p>
+                <label for="illustration">Mettez une image de la recette.</label>
+                <input type="text" id="illustration" name="illustration" required>
+            </p>
+            <p>
+                <label for="ingredients">Vos ingrédients.</label>
+                <textarea id="ingredients" required></textarea>
+            </p>
+            <p>
+                <label for="etapes">Vos étapes.</label>
+                <textarea id="etapes" required></textarea>
+            </p>
+            <input id="envoyer" type="submit" value="Envoyez votre recette!!!">
+        </form>
+    </section>
+    <script src="script_entrees.js"></script>
 </body>
 </html>

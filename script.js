@@ -1,5 +1,4 @@
 "use strict";
-console.log("froutch")
 
 /*var menu = document.getElementById("menuentrees")
 
@@ -14,7 +13,12 @@ console.log(ul)*/
 /*var lsmnu = document.querySelectorAll (".sous-menu li")
 console.log(lsmnu)*/
 
-var titre = document.getElementsByTagName ("h2");
+/*var titre = document.getElementsByTagName ("h2");
+var max = titre.length;
+
 console.log(titre);
-titre.style.color = "red";
+
+for(var i=0;i<max;i++){
+titre[1].style.color = "red";
+}*/
 
